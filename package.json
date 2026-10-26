@@ -1,0 +1,36 @@
+{
+  "name": "chatgpt-subscription-mcp",
+  "version": "0.1.0",
+  "description": "Local MCP bridge from Claude to subscription-authenticated Codex text and image generation.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "chatgpt-subscription-mcp": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test test/*.test.js",
+    "doctor": "node src/cli.js doctor",
+    "login": "node src/cli.js login",
+    "setup": "node src/cli.js setup",
+    "smoke": "node scripts/smoke.js",
+    "bundle": "node scripts/bundle.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "@openai/codex": "0.164.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.12",
+    "fflate": "^0.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corith37/chatgpt-subscription-mcp.git"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": "0.3",
+  "name": "chatgpt-subscription-mcp",
+  "display_name": "ChatGPT Subscription Bridge",
+  "version": "0.1.0",
+  "description": "Ask OpenAI questions and generate or edit images from Claude using your ChatGPT subscription.",
+  "long_description": "Local, unofficial Codex-backed MCP bridge. No OpenAI API key. Claude starts the bundled backend automatically; the ChatGPT app and a terminal do not need to stay open. Sign in with ChatGPT using the chatgpt_login tool. Account eligibility and Codex usage limits apply. Does not access existing ChatGPT web conversations. Prompts and attached images are sent to OpenAI, and results are returned to Claude and stored locally.",
+  "author": { "name": "corith37", "url": "https://github.com/corith37" },
+  "repository": { "type": "git", "url": "https://github.com/corith37/chatgpt-subscription-mcp" },
+  "homepage": "https://github.com/corith37/chatgpt-subscription-mcp",
+  "support": "https://github.com/corith37/chatgpt-subscription-mcp/issues",
+  "license": "MIT",
+  "server": {
+    "type": "node",
+    "entry_point": "server.js",
+    "mcp_config": { "command": "node", "args": ["${__dirname}/server.js"] }
+  },
+  "tools_generated": true,
+  "compatibility": { "platforms": ["win32", "darwin", "linux"], "runtimes": { "node": ">=22" } },
+  "keywords": ["chatgpt", "codex", "images", "claude", "subscription"]
+}

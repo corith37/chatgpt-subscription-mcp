@@ -6,6 +6,14 @@ Claude launches the bridge and its Codex backend automatically. **You do not nee
 
 This is an **unofficial local integration**, not an OpenAI or Anthropic product. It provides Codex-backed conversations and built-in image generation; it does not expose every ChatGPT feature or existing ChatGPT web conversations. Plan eligibility, workspace controls, and normal Codex usage limits still apply.
 
+## Open source and community
+
+**All project-owned code is public under the [MIT license](LICENSE):** the MCP server, Claude setup helper, tests, extension manifest, build scripts, and CI. There is no private edition or separate proprietary bridge component. You can fork it, change it, and submit improvements.
+
+Start with the [contributor guide](CONTRIBUTING.md) and [roadmap](ROADMAP.md). Use [Discussions](https://github.com/corith37/chatgpt-subscription-mcp/discussions) for questions and design ideas, [Issues](https://github.com/corith37/chatgpt-subscription-mcp/issues/new/choose) for reproducible bugs and feature proposals, and [pull requests](https://github.com/corith37/chatgpt-subscription-mcp/pulls) to contribute changes. Setup, clearer errors, image previews, and cross-platform testing are especially welcome.
+
+The [development guide](docs/DEVELOPMENT.md) maps the code and explains how to work without a subscription. The [release guide](docs/RELEASING.md) documents how the downloadable extensions are built from public source. Third-party components keep their own licenses; OpenAI's hosted models and services are external dependencies and are not included in this project's license. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
 ## Install in Claude Desktop
 
 ### Desktop extension
